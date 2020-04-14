@@ -12,25 +12,25 @@
         <div class="header__wrapper ">
             <nav class="main-nav main-nav--close">
                 <div class="main-nav__wrapper">
-                <a class="main-nav__logo logo">
-                    <svg class="main-nav__logo--mobile">
-                        <use xlink:href="svg/sprite.svg#logo-mobile"></use>
-                    </svg>
-                    <svg class="main-nav__logo--table">
-                        <use xlink:href="svg/sprite.svg#logo-table"></use>
-                    </svg>
-                    <svg class="main-nav__logo--desktop">
-                        <use xlink:href="svg/sprite.svg#logo-desktop"></use>
-                    </svg>
-                    <!-- <img class="main-nav__logo-image" width="75" height="22" src="img/logotype-white-mobile.png" alt="Логотип сайта PINK"> -->
-                </a>
-                <ul class="main-nav__list">
-                    <li class="main-nav__item"><a>Главная</a></li>
-                    <li class="main-nav__item"><a href="/photo.html">Фотографии</a></li>
-                    <li class="main-nav__item"><a href="/competition.html">Конкурс</a></li>
-                    <li class="main-nav__item"><a href="/htmlacadamy.html">HTML Acadamy</a></li>
-                </ul>
-                <button class="main-nav__taggle"><span class="visually-hidden">Развернуть меню</span></button>   
+                    <a class="main-nav__logo logo">
+                        <svg class="main-nav__logo--mobile">
+                            <use xlink:href="svg/sprite.svg#logo-mobile"></use>
+                        </svg>
+                        <svg class="main-nav__logo--table">
+                            <use xlink:href="svg/sprite.svg#logo-table"></use>
+                        </svg>
+                        <svg class="main-nav__logo--desktop">
+                            <use xlink:href="svg/sprite.svg#logo-desktop"></use>
+                        </svg>
+                        <!-- <img class="main-nav__logo-image" width="75" height="22" src="img/logotype-white-mobile.png" alt="Логотип сайта PINK"> -->
+                    </a>
+                    <ul class="main-nav__list">
+                        <li class="main-nav__item"><a>Главная</a></li>
+                        <li class="main-nav__item"><a href="/photo.html">Фотографии</a></li>
+                        <li class="main-nav__item"><a href="/competition.html">Конкурс</a></li>
+                        <li class="main-nav__item"><a href="/htmlacadamy.html">HTML Acadamy</a></li>
+                    </ul>
+                <button class="main-nav__taggle" aria-label="Развернуть/спрятать меню"></button>   
                 </div>
             </nav>
             <section class="application">
@@ -105,57 +105,79 @@
                 <a class="effect__link" href="">Узнать больше об исследовании</a>
             </div>
         </section>
-        <section class="reviews">
+        <section class="reviews container">
             <h2 class="visually-hidden">Отзывы о нас</h2>
-            <div class="reviews__list slider">
-                <blockquote class="reviews__item slider__item">
-                    <cite class="reviews__author-name">Николай Петров</cite>    
-                    <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                    <span class="reviews__author-info">25 лет, водитель трамвая</span>
-                </blockquote>
-                <blockquote class="reviews__item slider__item">
-                    <cite class="reviews__author-name">Николай Петров</cite>    
-                    <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                    <span class="reviews__author-info">25 лет, водитель трамвая</span>
-                </blockquote>
-                <blockquote class="reviews__item slider__item">
-                    <cite class="reviews__author-name">Николай Петров</cite>    
-                    <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-                    <span class="reviews__author-info">25 лет, водитель трамвая</span>
-                </blockquote>
-                <p class="reviews__taggles slider__taggles">
-                    <button class="slider__taggle">1</button>
-                    <button class="slider__taggle">2</button>
-                    <button class="slider__taggle">3</button>
-                </p>
+            <div class="reviews__list slider ">
+                <div class="reviews__wrapper">
+                    <blockquote class="reviews__item slider__item">
+                        <cite class="reviews__author-name">Николай Петров</cite>    
+                        <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                        <span class="reviews__author-info">25 лет, водитель трамвая</span>
+                    </blockquote>
+                    <blockquote class="reviews__item slider__item">
+                        <cite class="reviews__author-name">Николай Петров</cite>    
+                        <p class="reviews__text">«222Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                        <span class="reviews__author-info">25 лет, водитель трамвая</span>
+                    </blockquote>
+                    <blockquote class="reviews__item slider__item">
+                        <cite class="reviews__author-name">Николай Петров</cite>    
+                        <p class="reviews__text">«333Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                        <span class="reviews__author-info">25 лет, водитель трамвая</span>
+                    </blockquote>
+                </div>
             </div>
+            <button class="reviews__button reviews__button--back" aria-label="Предыдущий слайд"></button>
+            <button class="reviews__button reviews__button--next" aria-label="Следующий слайд"></button>
+            <p class="reviews__toggles slider__toggles">
+                <button class="slider__toggle slider__toggle--current">1</button>
+                <button class="slider__toggle">2</button>
+                <button class="slider__toggle">3</button>
+            </p>
         </section>
         <section class="price">
-            <table class="price__table">
-                <tr class="price__row ">
-                    <th class="price__row-head" colspan="2">
-                        <span class="price__tariff price__tariff--new">СТАНДАРД</span>
-                        <p class="price__USD">3,99 USD</p>
-                    </th>
-                </tr>
-                <tr class="price__row">
-                    <td class="price__data-left">РОЗОВЫЙ ФИЛЬТР</td>
-                    <td class="price__data-right"><span class="price__tick"></span></td>
-                </tr>
-                <tr class="price__row">
-                    <td class="price__data-left">СМАЙЛИКИ</td>
-                    <td class="price__data-right"><span class="price__tick"></span></td>
-                </tr>
-                <tr class="price__row">
-                    <td class="price__data-left">КОММЕНТАРИИ</td>
-                    <td class="price__data-right"><span class="price__cross"></span></td>
-                </tr>
-            </table>
-            <p class="price__taggles slider__taggles">
-                <button class="slider__taggle">1</button>
-                <button class="slider__taggle">2</button>
-                <button class="slider__taggle">3</button>
-            </p>
+            <div class="price__wrapper">
+                <table class="price__table">
+                    <tr class="price__row">
+                        <th class="price__row-head">
+                        </th>
+                        <th class="price__row-head">
+                            <span class="price__tariff">База</span>
+                            <p class="price__USD">1,99 USD</p>
+                        </th>
+                        <th class="price__row-head price__row-head--hit">
+                            <span class="price__tariff price__tariff--new">Стандарт</span>
+                            <p class="price__USD">3,99 USD</p>
+                        </th>
+                        <th class="price__row-head">
+                            <span class="price__tariff">Анлим</span>
+                            <p class="price__USD">9,99 USD</p>
+                        </th>
+                    </tr>
+                    <tr class="price__row">
+                        <td class="price__data">Розовый фильтр</td>
+                        <td class="price__data price__tick">РОЗОВЫЙ ФИЛЬТР</td>
+                        <td class="price__data price__tick">РОЗОВЫЙ ФИЛЬТР</td>
+                        <td class="price__data price__tick">РОЗОВЫЙ ФИЛЬТР</td>
+                    </tr>
+                    <tr class="price__row">
+                        <td class="price__data">Смайлики</td>
+                        <td class="price__data price__cross">СМАЙЛИКИ</td>
+                        <td class="price__data price__tick">СМАЙЛИКИ</td>
+                        <td class="price__data price__tick">СМАЙЛИКИ</td>
+                    </tr>
+                    <tr class="price__row">
+                        <td class="price__data">Комментарии</td>
+                        <td class="price__data price__cross">КОММЕНТАРИИ</td>
+                        <td class="price__data price__cross">КОММЕНТАРИИ</td>
+                        <td class="price__data price__tick">КОММЕНТАРИИ</td>
+                    </tr>
+                </table>
+            </div>
+            <p class="price__toggles slider__toggles">
+                <button class="slider__toggle">1</button>
+                <button class="slider__toggle slider__toggle--current">2</button>
+                <button class="slider__toggle">3</button>
+            </p> 
         </section>
         <section class="contacts">
             <h2 class="visually-hidden">Контакты для связи</h2>
@@ -192,20 +214,7 @@
             <img width="" height="" class="copyright__image"  src="" alt="Логотип htmlacadamy">
         </p>
     </footer>
-    <script>
-        let buttonMenu = document.querySelector('.main-nav__taggle');
-        let mainNav = document.querySelector('.main-nav');
-        buttonMenu.onclick = function() {
-            console.log('23');
-            if (mainNav.classList.contains('main-nav--close')) {
-                mainNav.classList.remove('main-nav--close');
-                mainNav.classList.add('main-nav--open');
-            } else {
-                mainNav.classList.add('main-nav--close');
-                mainNav.classList.remove('main-nav--open');
-            }
-        }
-    </script>
+    <script src="js/script.js"></script>
     <script src="https://jonneal.dev/svg4everybody/svg4everybody.min.js"></script>
     <script>svg4everybody();</script>
 </body>

@@ -1,0 +1,152 @@
+.price {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.price__wrapper{
+    position: relative;
+    overflow: hidden;
+    min-height: 281px;
+}
+
+.price__table {
+    position: absolute;
+    left: -260px;
+    width: 840px;
+    height: 281px;
+    transition: 1s;
+}
+
+.price__table--first { 
+    left: 0;
+}
+
+.price__table--third { 
+    left: -520px;
+}
+
+.price__table td,
+.price__table th {
+    box-sizing: border-box;
+    border: 2px solid #e5e5e5;
+}
+
+.price__table {
+    border-collapse: collapse;
+}
+
+.price__row-head {
+    background-color: #283645;
+    height: 98px;
+}
+
+.price__row-head--hit {
+    position: relative;
+    &::before {
+        content: "";
+        width: 74px;
+        height: 73px;
+        position: absolute;
+        top: 0px;
+        left: -2px;
+        background-image: url('../img/hit@2x.png');
+        background-repeat: no-repeat;
+        background-size: 74px 73px;
+        background-position: 0px 0px;
+    }
+}
+
+.price__tariff {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.price__USD {
+    color: #fff;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0;    
+}
+
+.price__data {
+    padding-left: 22px;
+    background-repeat: no-repeat;
+    background-size: 31px 21px;
+    background-position: 228px center;
+    width: 65px;
+    height: 59px;
+    border-left: none;
+}
+
+.price__tick {
+    background-image: url('../svg/tick.svg');
+}
+
+.price__cross {
+    background-image: url('../svg/cross.svg');
+    background-size: 27px 26px;
+}
+
+@media (min-width: $table-width) {
+    .price {
+        width: auto;
+    }
+
+    .price__wrapper{
+        position: relative;
+        overflow: hidden;
+        min-height: 220px;
+    }
+
+    .price__table {
+        position: static;
+        box-sizing: border-box;
+        width: 620px;
+        height: 220px;
+        margin: 0 auto;
+    }
+
+    .price__data {
+        font-size: 14px;
+        width: 25%;
+        padding: 0;
+        padding-left: 15px;
+        height: 47px;
+        background-position: 61px center;
+    }
+
+    .price__row-head:first-of-type {
+        background-color: transparent;
+        border: none
+    }
+
+    .price__data:not(:first-of-type) {
+        font-size: 0;
+    }
+
+    .price__tariff {
+        font-size: 16px;
+    }
+
+    
+    .price__USD {
+        font-size: 18px;
+    }
+
+    .price__table th {
+        height: 79px;
+    }
+
+    .price__row-head--hit::before {
+        background-size: 61px 61px;
+    }
+
+    .price__toggles {
+        display: none;
+    }
+}
