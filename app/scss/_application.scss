@@ -1,6 +1,6 @@
 .application {
     background-image: url("../img/iphone-5-in-hand-png.png"), url("../img/back-mobile1x.jpg");
-    background-size: auto, cover;
+    background-size: auto, auto;
     background-repeat: no-repeat;
     background-position: 50% 148px, 0% 0px;
 
@@ -17,7 +17,7 @@
     margin-top: 480px;
     padding-bottom: 20px;
     height: 230px;
-    width: 310px;
+    width: 280px;
 
     display: flex;
     flex-direction: column;
@@ -50,6 +50,7 @@
 }
 
 .application__os-item--apple {
+    display: block;
     background-repeat: no-repeat;
     width: 47px;
     height: 57px;
@@ -57,12 +58,14 @@
 }
 
 .application__os-item--android {
+    display: block;
     width: 43px;
     height: 47px;
     background-image: url("../img/android-logo.png");
 }
 
 .application__os-item--windows {
+    display: block;
     width: 44px;
     height: 41px;
     background-image: url("../img/microsoft-logo.png");

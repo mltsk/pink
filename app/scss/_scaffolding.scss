@@ -22,8 +22,8 @@ body {
     border-radius: 30px;
 
     text-align: center;
-    padding-top: 13px;
-    padding-bottom: 18px;
+    padding-top: 15px;
+    padding-bottom: 16px;
 
     &:hover {
         background-color: #fff;
@@ -34,6 +34,25 @@ body {
         color: rgba($color: #d22856, $alpha: 0.3);
     }
 }
+
+@media (min-width: $mobile-width) and (max-width: $table-width) {
+    .container {
+        margin: 0 auto;
+        width: 280px;
+        padding: 0 20px;
+    }
+    
+}
+
+@media (min-width: $table-width) and (max-width: $desktop-width) {
+    .container {
+        margin: 0 auto;
+        width: 640px;
+        padding: 0 10px;
+    }
+    
+}
+
 
 
 @media (min-width: $desktop-width) { 

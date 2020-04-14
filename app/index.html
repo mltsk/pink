@@ -13,7 +13,16 @@
             <nav class="main-nav main-nav--close">
                 <div class="main-nav__wrapper">
                 <a class="main-nav__logo logo">
-                    <img class="main-nav__logo-image" width="75" height="22" src="img/logotype-white-mobile.png" alt="Логотип сайта PINK">
+                    <svg class="main-nav__logo--mobile">
+                        <use xlink:href="svg/sprite.svg#logo-mobile"></use>
+                    </svg>
+                    <svg class="main-nav__logo--table">
+                        <use xlink:href="svg/sprite.svg#logo-table"></use>
+                    </svg>
+                    <svg class="main-nav__logo--desktop">
+                        <use xlink:href="svg/sprite.svg#logo-desktop"></use>
+                    </svg>
+                    <!-- <img class="main-nav__logo-image" width="75" height="22" src="img/logotype-white-mobile.png" alt="Логотип сайта PINK"> -->
                 </a>
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a>Главная</a></li>
@@ -31,9 +40,9 @@
                         <b class="application__slogan">Взгляните <br> на жизнь<br> иначе!</b>
                         <a class="application__button button" href="https://appstore.com">Скачать приложение</a>
                         <ul class="application__os-list">
-                            <li class="application__os-item application__os-item--apple"><span class="visually-hidden">Apple</span></li>
-                            <li class="application__os-item application__os-item--android"><span class="visually-hidden">Android</span></li>
-                            <li class="application__os-item application__os-item--windows"><span class="visually-hidden">Windows</span></li>
+                            <li class=""><a href="#"><span class="application__os-item application__os-item--apple"></span></a></li>
+                            <li class=""><a href="#"><span class="application__os-item application__os-item--android"></span></a></li>
+                            <li class=""><a href="#"><span class="application__os-item application__os-item--windows"></span></a></li>
                         </ul>
                         <span class="application__platforms">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</span>
                     </div>
@@ -43,21 +52,53 @@
     </header>   
     <main class="page-main">
         <section class="advantages">
-            <h2 class="visually-hidden">Преимущества приложения</h2>
-            <ul class="advantages__list">
-                <li class="advantages__item">
-                    <h3 class="advantages__title">Поднимает настроение</h3>
-                    <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-                </li>
-                <li class="advantages__item">
-                    <h3 class="advantages__title">Меняет мир вокруг</h3>
-                    <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-                </li>
-                <li class="advantages__item">
-                    <h3 class="advantages__title">Заводит новых друзей</h3>
-                    <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-                </li>
-            </ul>
+            <div class="advantages__wrapper container">
+                <h2 class="visually-hidden">Преимущества приложения</h2>
+                <span class="advantages__slogan">Устали от серости мегаполиса?</span>
+                <span class="advantages__slogan">Нам есть, что вам<br> предложить!</span>
+                <div class="advantages__inner-wrapper">
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <h3 class="advantages__title">Поднимает настроение</h3>
+                            <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3 class="advantages__title">Меняет мир вокруг</h3>
+                            <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                        </li>
+                        <li class="advantages__item">
+                            <h3 class="advantages__title">Заводит новых друзей</h3>
+                            <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+                        </li>
+                    </ul>
+                    <div class="advantages__iphones">
+                        <picture>
+                            <source srcset="img/iphone-desktop.webp 1x,
+                            img/iphone-desktop@2x.webp 2x"
+                                    media="(min-width: 960px)"
+                                    type="image/webp">
+                            <source srcset="img/iphone-desktop.png 1x,
+                            img/iphone-desktop@2x.png 2x"
+                                    media="(min-width: 960px)">
+                            <source srcset="img/iphone-table.webp 1x,
+                            img/iphone-table@2x.webp 2x"
+                                    media="(min-width: 660px)"
+                                    type="image/webp">
+                            <source srcset="img/iphone-table.png 1x,
+                            img/iphone-table@2x.png 2x"
+                                    media="(min-width: 660px)">
+                            <source srcset="img/iphone-mobile.webp 1x,
+                            img/iphone-mobile@2x.webp 2x"
+                                    type="image/webp">
+                            <img src="img/iphone-mobile.png"
+                                 srcset="img/iphone-mobile@2x.png 2x"
+                                 alt="Приложение запущено на телефоне">    
+                        </picture>
+                    </div>
+                </div>
+                
+                  
+            </div>
         </section>
         <section class="effect">
             <h2 class="effect__title">Эффект на 24 часа!</h2>
@@ -165,5 +206,7 @@
             }
         }
     </script>
+    <script src="https://jonneal.dev/svg4everybody/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
 </body>
 </html>
