@@ -135,69 +135,74 @@
             </p>
         </section>
         <section class="price">
-            <div class="price__wrapper">
-                <table class="price__table">
-                    <tr class="price__row">
-                        <th class="price__row-head">
-                        </th>
-                        <th class="price__row-head">
-                            <span class="price__tariff">База</span>
-                            <p class="price__USD">1,99 USD</p>
-                        </th>
-                        <th class="price__row-head price__row-head--hit">
-                            <span class="price__tariff price__tariff--new">Стандарт</span>
-                            <p class="price__USD">3,99 USD</p>
-                        </th>
-                        <th class="price__row-head">
-                            <span class="price__tariff">Анлим</span>
-                            <p class="price__USD">9,99 USD</p>
-                        </th>
-                    </tr>
-                    <tr class="price__row">
-                        <td class="price__data">Розовый фильтр</td>
-                        <td class="price__data price__tick">РОЗОВЫЙ ФИЛЬТР</td>
-                        <td class="price__data price__tick">РОЗОВЫЙ ФИЛЬТР</td>
-                        <td class="price__data price__tick">РОЗОВЫЙ ФИЛЬТР</td>
-                    </tr>
-                    <tr class="price__row">
-                        <td class="price__data">Смайлики</td>
-                        <td class="price__data price__cross">СМАЙЛИКИ</td>
-                        <td class="price__data price__tick">СМАЙЛИКИ</td>
-                        <td class="price__data price__tick">СМАЙЛИКИ</td>
-                    </tr>
-                    <tr class="price__row">
-                        <td class="price__data">Комментарии</td>
-                        <td class="price__data price__cross">КОММЕНТАРИИ</td>
-                        <td class="price__data price__cross">КОММЕНТАРИИ</td>
-                        <td class="price__data price__tick">КОММЕНТАРИИ</td>
-                    </tr>
-                </table>
-            </div>
+            <div class="price__container">
+                <div class="price__wrapper">
+                    <table class="price__table">
+                        <tr class="price__row">
+                            <th class="price__row-head">
+                            </th>
+                            <th class="price__row-head">
+                                <span class="price__tariff">База</span>
+                                <p class="price__USD">1,99 USD</p>
+                            </th>
+                            <th class="price__row-head price__row-head--hit">
+                                <span class="price__tariff price__tariff--new">Стандарт</span>
+                                <p class="price__USD">3,99 USD</p>
+                            </th>
+                            <th class="price__row-head">
+                                <span class="price__tariff">Анлим</span>
+                                <p class="price__USD">9,99 USD</p>
+                            </th>
+                        </tr>
+                        <tr class="price__row">
+                            <td class="price__data">Розовый фильтр</td>
+                            <td class="price__data price__tick">РОЗОВЫЙ ФИЛЬТР</td>
+                            <td class="price__data price__tick">РОЗОВЫЙ ФИЛЬТР</td>
+                            <td class="price__data price__tick">РОЗОВЫЙ ФИЛЬТР</td>
+                        </tr>
+                        <tr class="price__row">
+                            <td class="price__data">Смайлики</td>
+                            <td class="price__data price__cross">СМАЙЛИКИ</td>
+                            <td class="price__data price__tick">СМАЙЛИКИ</td>
+                            <td class="price__data price__tick">СМАЙЛИКИ</td>
+                        </tr>
+                        <tr class="price__row">
+                            <td class="price__data">Комментарии</td>
+                            <td class="price__data price__cross">КОММЕНТАРИИ</td>
+                            <td class="price__data price__cross">КОММЕНТАРИИ</td>
+                            <td class="price__data price__tick">КОММЕНТАРИИ</td>
+                        </tr>
+                    </table>
+                </div>    
             <p class="price__toggles slider__toggles">
                 <button class="slider__toggle">1</button>
                 <button class="slider__toggle slider__toggle--current">2</button>
                 <button class="slider__toggle">3</button>
-            </p> 
+            </p>
+            </div>     
         </section>
         <section class="contacts">
             <h2 class="visually-hidden">Контакты для связи</h2>
             <b class="contacts__slogan">Остались вопросы?<br> Свяжитесь с нами!</b>
             <ul class="contacts__list">
-                <li class="contacts__item">
-                    <span class="contacts__up">Звонте:</span>
-                    <span class="contacts__down">+7 (812) 555-66-66</span>
+                <li class="contacts__item contacts__item--phone">
+                    <p class="contacts__up">Звоните:</span>
+                    <p class="contacts__down">+7 (812) 555-66-66</span>
                 </li>
-                <li class="contacts__item">
-                    <span class="contacts__up">Пишите:</span>
-                    <span class="contacts__down">mail@htmlacademy.ru</span>
+                <li class="contacts__item contacts__item--mail">
+                    <p class="contacts__up">Пишите:</span>
+                    <p class="contacts__down contacts__down--mail">mail@htmlacademy.ru</span>
                 </li>
-                <li class="contacts__item">
-                    <span class="contacts__up">Приезжайте в гости:</span>
-                    <span class="contacts__down">ул. Большая Конюшенная, 19/8</span>
+                <li class="contacts__item contacts__item--address">
+                    <p class="contacts__up">Приезжайте в гости:</span>
+                    <p class="contacts__down contacts__down--address">ул. Большая<br> Конюшенная, 19/8</span>
                 </li>
             </ul>
         </section>
-        <div class="map"></div>
+        <div class="map">
+            <div class="map__wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1941.820983275665!2d30.32085304005045!3d59.936777147401344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1587013575279!5m2!1sru!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
         </div>
     </main>
     <footer class="page-footer">

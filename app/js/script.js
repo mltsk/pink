@@ -1,7 +1,7 @@
 let buttonMenu = document.querySelector('.main-nav__taggle');
 let mainNav = document.querySelector('.main-nav');
 buttonMenu.onclick = function() {
-    console.log('23');
+
     if (mainNav.classList.contains('main-nav--close')) {
         mainNav.classList.remove('main-nav--close');
         mainNav.classList.add('main-nav--open');
