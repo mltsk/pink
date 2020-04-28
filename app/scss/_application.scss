@@ -1,8 +1,8 @@
 .application {
-    background-image: url("../img/iphone-5-in-hand-png.png"), url("../img/back-mobile1x.jpg");
-    background-size: auto, auto;
+    background-image: url("../img/iphone-5-in-hand-png.png"), url("../img/back-tablet@1x.jpg");
+    background-size: auto, 760px auto;
     background-repeat: no-repeat;
-    background-position: 50% 148px, 0% 0px;
+    background-position: 50% 175px, 50% 30px;
 
     color: #fff;
     background-color: #1d2631;
@@ -13,8 +13,10 @@
 
 }
 
+
 .application__wrapper {
-    margin-top: 480px;
+    margin-top: 462px;
+    padding-top: 18px;
     padding-bottom: 20px;
     height: 230px;
     width: 280px;
@@ -79,6 +81,22 @@
     width: 280px;
 }
 
+@media (max-width: $table-width) {
+    .application__container {
+        background-color: #1d2631;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+
+    .application__wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+  }
+
 @media (min-width: $mobile-width) and (max-width: $table-width) {
     .application__slogan {
         display: none;
@@ -89,6 +107,7 @@
   @media (min-width: $table-width) and (max-width: $desktop-width) {
     .application {
         background-image: url("../img/iphone-6-in-hand-png.png"), url("../img/back-tablet@1x.jpg");
+        background-size: auto, cover;
         background-position: 50% 100%, 0% 0px;
         min-height: 729px;
     }

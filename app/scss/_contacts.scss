@@ -43,6 +43,11 @@
     color: #d22856;
     text-align: center;    
     margin: 0;
+    text-decoration: none;
+}
+
+.contacts__down:hover{
+    text-decoration: underline;
 }
 
 .contacts__down--mail {
@@ -63,7 +68,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-
+        width: 100%;
     }
 
     .contacts__item {
