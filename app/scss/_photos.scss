@@ -1,0 +1,108 @@
+.photos {
+    width: 87.5%;
+    max-width: 940px;
+    box-sizing: border-box;
+    color: $font-blue;
+
+    &__image {
+        min-height: 180px;
+        height: 50vw;
+        margin-top: 20px;
+        object-fit: cover;
+    }
+
+    &__author {
+        margin: 0;
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &__time {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        margin: 0;
+        
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__container {
+        max-width: 940px;
+        padding: 25px 15px;
+        box-sizing: border-box;
+
+        background-color: #f2f2f2;
+    }
+
+    &__likes {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        width: 125px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    &__number-likes {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $pink-main;
+    }
+
+    &__like {
+        content: '';
+
+        background-image: url('../svg/heart.svg');
+        background-size: cover;
+
+        display: block;
+        width: 13px;
+        height: 12px;
+    }
+
+    @media (min-width: $table-width) {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 94%;
+
+        &__image {
+            height: 45vw;
+        }
+
+        &__item {
+            max-width: 48.5%;
+            flex-grow: 1;
+        }
+
+        &__likes {
+            width: 100%;
+        }
+
+        &__like {
+            order: 1;
+        }
+
+    }
+
+    @media (min-width: $desktop-width) { 
+
+        &__item {
+            max-width: 32%;
+        }
+
+        &__image {
+            height: 400px;
+        }
+
+    }
+}

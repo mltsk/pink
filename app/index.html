@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pink - Главная</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
+<body class="index-page">
     <header class="page-header header">
         <div class="header__wrapper ">
             <nav class="main-nav main-nav--close">
                 <div class="main-nav__wrapper">
                     <a class="main-nav__logo logo">
-                        <svg role="img" width="74.426px" height="22.859px" class="main-nav__logo--mobile">
-                            <use xlink:href="./svg/sprite.svg#logo-mobile"></use>
+                        <svg role="img" width="74" height="22" class="main-nav__logo--mobile">
+                            <use xlink:href="svg/sprite.svg#logo-mobile"></use>
                         </svg>
-                        <svg role="img" width="146.3px" height="40.375px" class="main-nav__logo--table">
-                            <use xlink:href="./svg/sprite.svg#logo-table"></use>
+                        <svg role="img" width="146" height="40" class="main-nav__logo--table">
+                            <use xlink:href="svg/sprite.svg#logo-table"></use>
                         </svg>
                         <svg role="img" width="148" height="40" class="main-nav__logo--desktop">
-                            <use xlink:href="./svg/sprite.svg#logo-desktop"></use>
+                            <use xlink:href="svg/sprite.svg#logo-desktop"></use>
                         </svg>
                     </a>
                     <ul class="main-nav__list">
@@ -206,8 +206,11 @@
     </main>
     <footer class="page-footer container">
         <a class="page-footer__logo logo">
-            <svg width="147" height="40" class="page-footer__logo-table-footer">
-                <use xlink:href="svg/sprite.svg#logo-table-footer"></use>
+            <svg class="page-footer__logo--table" role="img" width="146.3px" height="40.375px">
+                <use xlink:href="./svg/sprite.svg#logo-table-footer"></use>
+            </svg>
+            <svg class="page-footer__logo--desktop" role="img" width="148" height="40">
+                <use xlink:href="./svg/sprite.svg#logo-desktop-footer"></use>
             </svg>
         </a>
         <ul class="page-footer__social social">
@@ -227,6 +230,8 @@
     <script src="js/script.js"></script>
     <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
     <script src="js/svg4everybody.min.js"></script>
-    <script>svg4everybody();</script>
+    <script>
+        svg4everybody();
+    </script>
 </body>
 </html>

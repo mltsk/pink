@@ -1,0 +1,53 @@
+.header-title {
+    min-height: 240px;
+
+    background-image:url("../img/back-tablet@1x.jpg");
+    background-size: 900px auto;
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+
+    color: #fff;
+    background-color: #1d2631;
+    margin-top: -66px;
+    border-top: 1px solid transparent;
+}
+
+.header-title__title {
+    margin: 100px auto;
+    width: 180px;
+
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+}
+
+@media (min-width: $table-width) { 
+    .header-title {
+        background-size: 1200px auto;
+        min-height: 440px;
+        margin-top: -110px;
+    }
+
+    .header-title__title {
+        margin-top: 180px; 
+        font-size: 50px;
+        width: 370px;
+    }
+
+}
+
+@media (min-width: $desktop-width) { 
+    .header-title {
+        background-size: 2000px auto;
+        background-position: 50% -300px;
+        min-height: 395px;
+    }
+
+    .header-title__title {
+        margin-top: 180px; 
+        font-size: 50px;
+        width: 370px;
+    }
+
+}
+

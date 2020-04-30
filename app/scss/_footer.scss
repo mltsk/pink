@@ -1,97 +1,137 @@
+@media (max-width: $table-width) {  
+    .index-page .page-footer {
+        display: none;
+    }
+
+}
+
+
 .page-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 30px;
+    min-height: 280px;
+    box-sizing: border-box;
+}
+
+.page-footer__social {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 177px;
+}
+
+.social-item {
+    width: 51px;
+    height: 51px;
+    box-sizing: border-box;
+    border: 3px solid #e9ebec;
+    border-radius: 50%;
+
+    background-repeat: no-repeat;
+    background-position: center;
+
+    cursor: pointer;
+
+    &:hover {
+        border: 3px solid #283645;
+    }
+    &:active {
+        border: 3px solid #283645;
+        opacity: 0.1;
+    }
+}
+
+.social-item__twitter {
+    background-image: url('../svg/twitter.svg');
+    background-size: 18px 14px;
+}
+
+.social-item__facebook {
+    background-image: url('../svg/facebook.svg');
+    background-size: 9px 18px;
+}
+
+.social-item__youtube {
+    background-image: url('../svg/youtube.svg');
+    background-size: 15px 13px;
+}
+
+.page-footer__copyright {
+    margin: 0;
+    padding: 0;
+    width: 128px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 13px;
+    margin-top: 5px;
+}
+.page-footer__copyright svg{ 
+    fill: #d22856;
+    &:hover {
+        fill: #283645;
+    }
+    &:active {
+        fill: #bec2c7;
+    }
+
+}
+
+.copyright__developed {
+    font-size: 14px;
+    color: #283645;
+}
+
+.page-footer__logo--desktop {
     display: none;
 }
 
+.page-footer__logo--table {
+    fill: black;
+    color: $pink-main;
+}
+
+.page-footer__logo[href] .page-footer__logo--table:hover {
+    fill: $pink-main;
+}
+
+.page-footer__logo[href] .page-footer__logo--table:active {
+    fill: black;
+    opacity: 0.3;
+}
+
 @media (min-width: $table-width) {  
+
     .page-footer {
         display: flex;
-        padding-top: 36px;
-        padding-bottom: 30px;
+        flex-direction: row;
+        min-height: 130px;
     }
 
     .page-footer__logo {
-       margin-left: 5px; 
+        margin-left: 5px; 
     }
 
     .page-footer__social {
-        margin: 0;
-        padding: 0;
         margin-left: 75px;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        width: 177px;
-    }
-
-    .social-item {
-        width: 51px;
-        height: 51px;
-        box-sizing: border-box;
-        border: 3px solid #e9ebec;
-        border-radius: 50%;
-
-        background-repeat: no-repeat;
-        background-position: center;
-
-        cursor: pointer;
-
-        &:hover {
-            border: 3px solid #283645;
-        }
-        &:active {
-            border: 3px solid #283645;
-            opacity: 0.1;
-        }
-    }
-
-    .social-item__twitter {
-        background-image: url('../svg/twitter.svg');
-        background-size: 18px 14px;
-    }
-
-    .social-item__facebook {
-        background-image: url('../svg/facebook.svg');
-        background-size: 9px 18px;
-    }
-    
-    .social-item__youtube {
-        background-image: url('../svg/youtube.svg');
-        background-size: 15px 13px;
     }
 
     .page-footer__copyright {
-        margin: 0;
-        padding: 0;
         margin-left: auto;
-        width: 128px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 13px;
-        margin-top: 5px;
     }
-    .page-footer__copyright svg{ 
-        fill: #d22856;
-        &:hover {
-            fill: #283645;
-        }
-        &:active {
-            fill: #bec2c7;
-        }
-
-    }
-
-    .copyright__developed {
-        font-size: 14px;
-        color: #283645;
-    }
-
 }
 
 @media (min-width: $desktop-width) {  
     .page-footer {
         padding-top: 65px;
         padding-bottom: 70px;
+        min-height: 225px;
     }
 
     .page-footer__logo {
@@ -111,6 +151,28 @@
 
     .copyright__developed {
         font-size: 18px;
+    }
+
+    .page-footer__logo--table {
+        display: none;
+    }
+
+    .page-footer__logo--desktop {
+        display: block;
+    }
+
+    .page-footer__logo--desktop {
+        fill: black;
+        color: $pink-main;
+    }
+    
+    .page-footer__logo[href] .page-footer__logo--desktop:hover {
+        fill: $pink-main;
+    }
+    
+    .page-footer__logo[href] .page-footer__logo--desktop:active {
+        fill: black;
+        opacity: 0.3;
     }
 
 }

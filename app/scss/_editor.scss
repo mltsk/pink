@@ -1,0 +1,279 @@
+.editor {
+    position: relative;
+
+    max-width: 940px;
+    margin: 0 auto;
+
+    background-color: #f2f2f2;
+    border: 1px solid transparent;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 200px;
+        left: 0;
+
+        width: 100%;
+        height: 1px;
+
+        background-color: #dddfe0;
+    }
+    
+    &__image-wrapper {
+        margin: 0 auto;
+        width: 280px;
+    }
+
+    &__wrapper {
+        padding-top: 20px;
+        width: 87.5%;
+        box-sizing: border-box;
+    }
+    
+    &__effects {
+        position: relative;
+
+        display: flex;
+        justify-content: space-around;
+        width: 240px;
+        margin: 0 auto;
+        margin-top: 40px;
+        padding: 0;
+
+        list-style: none;
+    }
+
+    &__effect--active .editor__option:hover svg {
+        opacity: 1;
+    }
+
+    &__effect--active svg{
+        fill: $pink-main;
+        opacity: 1;
+    }
+
+    &__option {
+        border: none;
+        background-color: transparent;
+        padding: 0;
+
+        &:hover svg{
+            opacity: 0.3;
+        }
+    }
+
+    &__svg {
+        fill: $font-blue;
+        opacity: 0.5;
+    }
+
+    &__scroll-bar {
+        position: absolute;
+        top: 85px;
+        left: 0;
+
+        width: 240px;
+    }
+
+    &__scroll-bar--filling .scroll-bar__point{
+        left: 30%;
+    }
+
+    &__scroll-bar--contrast .scroll-bar__point{
+        left: 80%;
+    }
+
+    &__scroll-bar--contrast {
+        display: none;
+    }
+
+    &__scroll-bar--filling {
+        display: none;
+    }
+
+    &__button {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+
+        background-color: #fff;
+    }
+
+    &__button--post {
+        margin-top: 115px;
+        border-color: $pink-main;
+        color: $pink-main;
+
+        &:hover {
+            background-color: $pink-main;
+            color: white;
+        }
+
+        &:active {
+            background-color: $pink-main;
+            color: rgba($color: #fff, $alpha: 0.3);  
+        }
+    }
+
+    &__button--cancel {
+        margin-top: 25px;
+        margin-bottom: 40px;
+        border-color: rgba($color: $font-blue, $alpha: 0.1);
+        color: rgba($color: $font-blue, $alpha: 0.1);
+
+        &:hover {
+            border-color: rgba($color: $font-blue, $alpha: 0.3);
+            color: rgba($color: $font-blue, $alpha: 0.3);
+        }
+
+        &:active {
+            background-color: rgba($color: $font-blue, $alpha: 0.3);
+            border-color: rgba($color: $font-blue, $alpha: 0);
+            color: rgba($color: #fff, $alpha: 0.3);  
+        }
+    }
+
+    @media (min-width: $table-width) {
+        
+        &::after {
+            display: none;
+        }
+
+        &__wrapper {
+            display: flex;
+            width: 94%;
+            padding-top: 55px;
+            padding-bottom: 40px;
+        }
+
+        &__image-wrapper {
+            margin: 0;
+        }
+        
+        &__wrapper-option {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            margin-left: 12%;
+        }
+
+        &__effects {
+            flex-direction: column;
+            width: 100%;
+            height: 200px;
+            margin: 0;
+        }
+
+        &__effect {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 72px;
+
+            border-bottom: 1px solid #dddfe0;
+        }
+
+        &__option svg{
+            width: 23px;
+            height: 23px;
+
+            fill: $pink-main;
+            opacity: 1;
+        }
+
+        &__option--contrast svg{
+            width: 16px;
+            height: 16px;
+        }
+
+        &__scroll-bar {
+            position: static;
+
+            display: block;
+            width: 73%;
+            margin-right: 18px;
+        }
+
+        &__buttons {
+            margin-top: auto;
+        }
+
+        &__button {
+            width: 90%;
+        }
+
+        &__button--post { 
+            margin-top: auto;
+        }
+
+        &__button--cancel { 
+            margin-bottom: 0;
+        }
+        
+    }
+
+    @media (min-width: $desktop-width) { 
+        &__wrapper {
+            width: 800px;
+            margin-left: 80px;
+            margin-right: 60px;
+        }
+
+        &__wrapper-option {
+            width: 410px;
+            margin-left: 90px;
+        }
+
+        &__option--crop svg {
+            width: 44px;
+            height: 44px;
+        }
+
+        &__option--filling svg {
+            width: 48px;
+            height: 43px;
+        }
+
+        &__option--contrast svg {
+            width: 32px;
+            height: 32px;
+        }
+
+        &__buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        &__button {
+            width: 180px;
+            margin: 0;
+        }
+    }
+
+}
+
+
+
+.scroll-bar {
+    &__line {
+        position: relative;
+
+        height: 2px;
+        background-color: $font-blue;
+    }
+
+    &__point {
+        position: absolute;
+        top: -6px;
+        left: 70%;
+
+        width: 14px;
+        height: 14px;
+        box-sizing: border-box;
+
+        background-color: white;
+        border: 2px solid $pink-main;
+        border-radius: 50%;
+    }
+}

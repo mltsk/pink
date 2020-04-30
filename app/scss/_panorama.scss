@@ -1,0 +1,137 @@
+.panorama {
+    position: relative;
+    max-width: 1200px;
+    color: $font-blue;
+    
+    &::before {
+        content: "Панорама дня";
+
+        position: absolute;
+        top: 0;
+        right: 20px;
+
+        padding-top: 6px;
+        width: 140px;
+        height: 36px;
+        box-sizing: border-box;
+
+        font-size: 12px;
+        line-height: 24px;
+        font-weight: 700;
+        text-align: center;
+        color: #fff;
+        text-transform: uppercase;
+
+        background-color: $pink-main;
+    }
+
+    &__author {
+        margin: 0;
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    &__time {
+        font-size: 12px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+    &__description {
+        margin: 0;
+        
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    &__container {
+        width: 87.5%;
+        max-width: 940px;
+        padding: 25px 15px;
+        box-sizing: border-box;
+
+        background-color: #f2f2f2;
+    }
+
+    &__likes {
+        position: relative;
+
+        display: flex;
+        justify-content: space-between;
+        width: 125px;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    &__number-likes {
+        font-size: 12px;
+        text-transform: uppercase;
+        color: $pink-main;
+    }
+
+    &__like {
+        content: '';
+
+        background-image: url('../svg/heart.svg');
+        background-size: cover;
+
+        display: block;
+        width: 13px;
+        height: 12px;
+    }
+
+    @media (min-width: $table-width) {
+        
+        &::before {
+            top: 55px;
+        }
+        &__image-wrapper {
+            display: flex;
+            justify-content: center;
+
+            overflow: hidden;
+        }
+
+        &__image {
+            width: 170%;
+        } 
+
+        &__container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 94%;
+            padding: 30px;
+        }
+
+        &__author {
+            order: 1;
+            width: auto;
+            flex-grow: 1;
+        }
+
+        &__likes {
+            order: 2;
+            margin: 0;
+        }
+
+        &__description {
+            order: 3;
+        }
+
+        &__number-likes {
+            order: -1;
+        }
+
+    }
+
+    @media (min-width: 1000px)  {   
+        &::before {
+            right: calc((100% - 960px)/2);
+        }
+    }
+    
+    
+}
