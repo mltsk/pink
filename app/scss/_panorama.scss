@@ -127,6 +127,12 @@
 
     }
 
+    @media (min-width: $table-width) {
+        &__image {
+            width: 100%;
+        } 
+    }
+
     @media (min-width: 1000px)  {   
         &::before {
             right: calc((100% - 960px)/2);

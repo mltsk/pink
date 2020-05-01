@@ -14,7 +14,7 @@
 
 .header-title__title {
     margin: 100px auto;
-    width: 180px;
+    width: 250px;
 
     font-size: 24px;
     font-weight: 300;
@@ -31,7 +31,7 @@
     .header-title__title {
         margin-top: 180px; 
         font-size: 50px;
-        width: 370px;
+        width: 520px;
     }
 
 }
@@ -47,6 +47,11 @@
         margin-top: 180px; 
         font-size: 50px;
         width: 370px;
+    }
+
+    
+    .page-form .header-title__title {
+        width: 760px;
     }
 
 }

@@ -52,6 +52,10 @@
         opacity: 1;
     }
 
+    &__effect--active .editor__scroll-bar{ 
+        display: block;
+    }
+
     &__option {
         border: none;
         background-color: transparent;
@@ -72,6 +76,7 @@
         top: 85px;
         left: 0;
 
+        display: none;
         width: 240px;
     }
 
@@ -83,13 +88,13 @@
         left: 80%;
     }
 
-    &__scroll-bar--contrast {
-        display: none;
-    }
+    // &__scroll-bar--contrast {
+    //     display: none;
+    // }
 
-    &__scroll-bar--filling {
-        display: none;
-    }
+    // &__scroll-bar--filling {
+    //     display: none;
+    // }
 
     &__button {
         display: block;
@@ -97,6 +102,8 @@
         margin: 0 auto;
 
         background-color: #fff;
+
+        cursor: pointer;
     }
 
     &__button--post {
@@ -182,6 +189,12 @@
             opacity: 1;
         }
 
+        &__option {
+            &:hover svg{
+                opacity: 1;
+            }
+        }
+
         &__option--contrast svg{
             width: 16px;
             height: 16px;
@@ -224,7 +237,7 @@
             width: 410px;
             margin-left: 90px;
         }
-
+        
         &__option--crop svg {
             width: 44px;
             height: 44px;
@@ -275,5 +288,6 @@
         background-color: white;
         border: 2px solid $pink-main;
         border-radius: 50%;
+        cursor: pointer;
     }
 }

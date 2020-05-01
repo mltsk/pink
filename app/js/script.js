@@ -126,3 +126,38 @@ let buttonBack = document.querySelector('.reviews__button--back'),
     
 
     })
+
+editor 
+
+
+
+    // // console.log(editorButton);
+    // // console.log(editor);
+
+    // function openCity(evt, cityName) {
+    //     // Declare all variables
+    //     let editorButton = document.querySelectorAll('.editor__option'),
+    //     editor = document.querySelectorAll('.editor__effect'),
+    //     effects = document.querySelector('.editor__effects');
+
+
+    //     // Get all elements with class="tabcontent" and hide them
+    //     tabcontent = document.getElementsByClassName("tabcontent");
+    //     for (i = 0; i < editor.length; i++) {
+    //         editor[i].classList.remove = "editor__effect--active";
+    //     }
+      
+    //     // Get all elements with class="tablinks" and remove the class "active"
+    //     tablinks = document.getElementsByClassName("tablinks");
+    //     for (i = 0; i < tablinks.length; i++) {
+    //       tablinks[i].className = tablinks[i].className.replace(" active", "");
+    //     }
+      
+    //     // Show the current tab, and add an "active" class to the button that opened the tab
+    //     document.getElementById(cityName).style.display = "block";
+    //     evt.currentTarget.className += " active";
+    //   }
+
+
+// })
+

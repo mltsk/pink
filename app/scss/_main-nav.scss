@@ -10,11 +10,11 @@
     margin-top: 20px;
 }
 
-.main-nav__logo[href]:hover svg{ 
+.main-nav__logo[href] svg:hover{ 
     fill: $pink-main;
 }
 
-.main-nav__logo[href]:active svg{ 
+.main-nav__logo[href] svg:active{ 
     fill: white;
     opacity: 0.3;
 }
